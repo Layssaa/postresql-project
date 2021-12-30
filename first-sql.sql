@@ -12,6 +12,11 @@ CREATE TABLE Aluno(
 	hora_aula TIME,
 	matriculado_em TIMESTAMP
 );
+
+CREATE TABLE curso (
+	id SERIAL PRIMARY KEY,
+	nome VARCAR(255) NOT NULL
+)
 -- ------------ BUSCAR -------------------
 SELECT * FROM aluno
 SELECT * FROM aluno WHERE nome <> 'Layssa'
@@ -70,3 +75,4 @@ FROM aluno
 WHERE nome LIKE 'Layssa' 
 OR nome LIKE 'Lay'
 OR nome LIKE 'Laura'
+	
